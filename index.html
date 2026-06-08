@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTMS ENERGIE - Plomberie Chauffage Ventilation</title>
+    <title>MTMS ENERGIE - Plomberie Chauffage Ventilation Argenteuil</title>
+    <meta name="description" content="MTMS ENERGIE - Plombier chauffagiste Île-de-France. Installation chaudière, dépannage fuite, création salle de bain. Devis gratuit 07 68 75 48">
     <style>
         * {margin:0; padding:0; box-sizing:border-box;}
         body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.6; color:#333;}
         .container {max-width:1100px; margin:0 auto; padding:0 20px;}
         header {background:#fff; padding:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
         .header-content {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;}
-        .logo-box {background:#1d3557; padding:10px 15px; border-radius:8px;}
-        .logo-text {color:white; font-size:32px; font-weight:900; letter-spacing:-1px;}
-        .logo-sub {color:#a8dadc; font-size:11px; font-weight:600; letter-spacing:1px;}
+        .logo-wrap {display:flex; align-items:center; gap:15px;}
+        .logo-img {height:65px; width:auto;}
+        .logo-text {display:flex; flex-direction:column;}
+        .logo-text strong {font-size:28px; font-weight:900; color:#1d3557; line-height:1; letter-spacing:-0.5px;}
+        .logo-text span {font-size:11px; color:#457b9d; font-weight:600; letter-spacing:1px;}
         .contact-header {text-align:right;}
         .phone {font-size:22px; font-weight:bold; color:#e63946; text-decoration:none; display:block;}
         .email {font-size:14px; color:#457b9d; text-decoration:none; display:block; margin-top:4px;}
@@ -32,51 +35,23 @@
         .zones {padding:70px 0; text-align:center; background:white;}
         .zones h2 {font-size:36px; margin-bottom:20px; color:#1d3557;}
         .zones p {font-size:26px; margin-bottom:10px; font-weight:900; color:#e63946; text-transform:uppercase;}
-        footer {background:#1d3557; color:white; padding:45px 0; text-align:center;}
-        footer p {margin:8px 0;}
-        footer a {color:#a8dadc; text-decoration:none;}
-        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .contact-header{text-align:center;} .logo-text{font-size:28px;} .zones p{font-size:20px;} .btn-group{flex-direction:column; align-items:center;}}
+        footer {background:#1d3557; color:white; padding:60px 0 30px;}
+        .footer-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px; margin-bottom:40px;}
+        .footer-col h4 {font-size:20px; margin-bottom:15px; color:#a8dadc;}
+        .footer-col p, .footer-col li {margin:8px 0; opacity:0.9; font-size:15px;}
+        .footer-col ul {list-style:none; padding:0;}
+        .footer-col a {color:#a8dadc; text-decoration:none;}
+        .footer-bottom {border-top:1px solid #457b9d; padding-top:30px; text-align:center; font-size:14px; opacity:0.8;}
+        .footer-logo {height:50px; width:auto; margin-bottom:15px; background:white; padding:8px; border-radius:5px;}
+        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .contact-header{text-align:center;} .logo-wrap{justify-content:center;} .logo-text strong{font-size:24px;} .zones p{font-size:20px;} .btn-group{flex-direction:column; align-items:center;}}
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-box">
-                    <div class="logo-text">MTMS ENERGIE</div>
-                    <div class="logo-sub">PLOMBERIE • CHAUFFAGE • VENTILATION</div>
-                </div>
-                <div class="contact-header">
-                    <a href="tel:0768687548" class="phone">07 68 68 75 48</a>
-                    <a href="mailto:contact@mtmsenergie.com" class="email">contact@mtmsenergie.com</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h1>Plomberie • Chauffage • Ventilation</h1>
-            <p>Dépannage, installation et entretien - Intervention rapide 7j/7</p>
-            <div class="btn-group">
-                <a href="tel:0768687548" class="btn">Appeler maintenant</a>
-                <a href="mailto:contact@mtmsenergie.com?subject=Demande de devis gratuit" class="btn btn-secondary">Devis gratuit</a>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <h2>Nos prestations</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" alt="Création salle de bain">
-                    <div class="card-content">
-                        <h3>Création de salle de bain</h3>
-                        <p>Conception et installation complète de votre salle de bain clé en main. Carrelage, plomberie, sanitaire.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=600&h=400&fit=crop" alt="Réparation fuite d'eau sous évier">
-                    <div class="card-content">
-                        <h3>Réparation de fuite d'eau</h3>
-                        <p>Détection et réparation de fuites sur tuyauterie, robinet, WC, évier. Intervention d'urgence 7j/7.</p>
-                    </div
+                <div class="logo-wrap">
+                    <img src="https://i.imgur.com/8Q1Zz7P.png" alt="Logo MTMS ENERGIE" class="logo-img">
+                    <div class="logo-text">
+                        <strong>MTMS ENERGIE</strong>
+                        <span>PLOM
