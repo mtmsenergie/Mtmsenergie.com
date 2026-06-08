@@ -10,12 +10,18 @@
         .container {max-width:1100px; margin:0 auto; padding:0 20px;}
         header {background:#fff; padding:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
         .header-content {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;}
-        .logo-img {height:75px; width:auto;}
-        .phone {font-size:22px; font-weight:bold; color:#e63946; text-decoration:none;}
+        .logo-box {background:#1d3557; padding:10px 15px; border-radius:8px;}
+        .logo-text {color:white; font-size:32px; font-weight:900; letter-spacing:-1px;}
+        .logo-sub {color:#a8dadc; font-size:11px; font-weight:600; letter-spacing:1px;}
+        .contact-header {text-align:right;}
+        .phone {font-size:22px; font-weight:bold; color:#e63946; text-decoration:none; display:block;}
+        .email {font-size:14px; color:#457b9d; text-decoration:none; display:block; margin-top:4px;}
         .hero {background:linear-gradient(135deg,#1d3557 0%,#457b9d 100%); color:white; padding:80px 0; text-align:center;}
         .hero h1 {font-size:40px; margin-bottom:15px;}
         .hero p {font-size:20px; margin-bottom:30px; opacity:0.95;}
+        .btn-group {display:flex; gap:15px; justify-content:center; flex-wrap:wrap;}
         .btn {display:inline-block; background:#e63946; color:white; padding:16px 32px; text-decoration:none; border-radius:5px; font-weight:bold; font-size:18px;}
+        .btn-secondary {background:white; color:#1d3557;}
         .services {padding:70px 0; background:#f1faee;}
         .services h2 {text-align:center; font-size:36px; margin-bottom:45px; color:#1d3557;}
         .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:30px;}
@@ -28,15 +34,22 @@
         .zones p {font-size:26px; margin-bottom:10px; font-weight:900; color:#e63946; text-transform:uppercase;}
         footer {background:#1d3557; color:white; padding:45px 0; text-align:center;}
         footer p {margin:8px 0;}
-        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .logo-img{height:65px;} .zones p{font-size:20px;}}
+        footer a {color:#a8dadc; text-decoration:none;}
+        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .contact-header{text-align:center;} .logo-text{font-size:28px;} .zones p{font-size:20px;} .btn-group{flex-direction:column; align-items:center;}}
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="https://i.imgur.com/8Q1Zz7P.png" alt="MTMS ENERGIE Logo" class="logo-img">
-                <a href="tel:0768687548" class="phone">07 68 68 75 48</a>
+                <div class="logo-box">
+                    <div class="logo-text">MTMS ENERGIE</div>
+                    <div class="logo-sub">PLOMBERIE • CHAUFFAGE • VENTILATION</div>
+                </div>
+                <div class="contact-header">
+                    <a href="tel:0768687548" class="phone">07 68 68 75 48</a>
+                    <a href="mailto:contact@mtmsenergie.com" class="email">contact@mtmsenergie.com</a>
+                </div>
             </div>
         </div>
     </header>
@@ -44,7 +57,10 @@
         <div class="container">
             <h1>Plomberie • Chauffage • Ventilation</h1>
             <p>Dépannage, installation et entretien - Intervention rapide 7j/7</p>
-            <a href="tel:0768687548" class="btn">Appeler maintenant</a>
+            <div class="btn-group">
+                <a href="tel:0768687548" class="btn">Appeler maintenant</a>
+                <a href="mailto:contact@mtmsenergie.com?subject=Demande de devis gratuit" class="btn btn-secondary">Devis gratuit</a>
+            </div>
         </div>
     </section>
     <section class="services">
@@ -59,36 +75,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=400&fit=crop" alt="Réparation fuite d'eau">
+                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=600&h=400&fit=crop" alt="Réparation fuite d'eau sous évier">
                     <div class="card-content">
                         <h3>Réparation de fuite d'eau</h3>
-                        <p>Détection et réparation de fuites sur tuyauterie, robinet, WC. Intervention d'urgence 7j/7.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" alt="Installation chaudière">
-                    <div class="card-content">
-                        <h3>Installation de chaufferie</h3>
-                        <p>Pose et mise en service de chaudières gaz, fioul et pompes à chaleur. Entretien annuel obligatoire.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="zones">
-        <div class="container">
-            <h2>Zone d'intervention</h2>
-            <p>ÎLE-DE-FRANCE ET FRANCE MÉTROPOLITAINE</p>
-            <p style="font-size:18px; color:#333; font-weight:normal; text-transform:none;">Dépannage urgent 7j/7 - Devis gratuit</p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p><strong>MTMS ENERGIE</strong></p>
-            <p>PLOMBERIE • CHAUFFAGE • VENTILATION</p>
-            <p>07 68 68 75 48 | Basé à Argenteuil</p>
-            <p style="font-size:14px; margin-top:12px; opacity:0.8;">SIREN : 953 741 060</p>
-        </div>
-    </footer>
-</body>
-</html>
+                        <p>Détection et réparation de fuites sur tuyauterie, robinet, WC, évier. Intervention d'urgence 7j/7.</p>
+                    </div
