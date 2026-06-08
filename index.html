@@ -14,4 +14,161 @@
         .brand h1 {font-size:32px; font-weight:900; margin:0; letter-spacing:-1px;}
         .brand p {font-size:13px; font-weight:600; margin:3px 0 0 0; text-transform:uppercase;}
         .header-info {text-align:right;}
-        .header-info .cible {font-size:13px; color:#0d4f6
+        .header-info .cible {font-size:13px; color:#0d4f6c; font-weight:700; margin-bottom:5px; text-transform:uppercase;}
+        .header-info .tel {font-size:28px; font-weight:900; color:#e63946; text-decoration:none;}
+        .hero {background:#0d4f6c; color:white; padding:80px 0; text-align:center;}
+        .hero h2 {font-size:42px; margin-bottom:15px; font-weight:900;}
+        .hero p {font-size:20px; margin-bottom:35px; opacity:0.9;}
+        .btn {display:inline-block; background:#e63946; color:white; padding:16px 32px; text-decoration:none; border-radius:5px; font-weight:bold; font-size:18px; margin:5px;}
+        .btn-blanc {background:white; color:#0d4f6c;}
+        .badges {background:#f1f5f9; padding:25px 0; border-bottom:1px solid #e2e8f0;}
+        .badges-flex {display:flex; justify-content:center; gap:35px; flex-wrap:wrap; font-weight:800; color:#0d4f6c; font-size:15px;}
+        .services {padding:70px 0; background:#fff;}
+        .services h2 {text-align:center; font-size:36px; margin-bottom:15px; color:#0d4f6c; font-weight:900;}
+        .services .intro {text-align:center; font-size:18px; color:#555; margin-bottom:50px;}
+        .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:25px;}
+        .card {border:2px solid #e2e8f0; border-radius:10px; padding:30px 25px; background:#fff;}
+        .card-tag {display:inline-block; background:#e8f4f8; color:#0d4f6c; padding:4px 12px; border-radius:4px; font-size:12px; font-weight:700; margin-bottom:15px; text-transform:uppercase;}
+        .card h3 {color:#0d4f6c; margin-bottom:12px; font-size:22px; font-weight:800;}
+        .card p {color:#555; font-size:15px; line-height:1.7;}
+        .clients {padding:60px 0; background:#f8f9fa; text-align:center;}
+        .clients h2 {font-size:30px; margin-bottom:30px; color:#0d4f6c; font-weight:900;}
+        .clients-list {display:flex; justify-content:center; gap:25px; flex-wrap:wrap; font-weight:600; color:#475569; font-size:16px;}
+        .zones {padding:70px 0; text-align:center; background:white;}
+        .zones h2 {font-size:34px; margin-bottom:15px; color:#0d4f6c; font-weight:900;}
+        .zones .zone-main {font-size:24px; font-weight:900; color:#e63946; text-transform:uppercase; margin-bottom:10px;}
+        .zones .zone-sub {font-size:16px; color:#555;}
+        footer {background:#0d4f6c; color:white; padding:50px 0 25px;}
+        .footer-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:35px; margin-bottom:35px;}
+        .footer-col h4 {font-size:17px; margin-bottom:15px; color:#a8dadc; font-weight:700;}
+        .footer-col p, .footer-col a {margin:8px 0; color:white; text-decoration:none; font-size:15px; display:block;}
+        .footer-bottom {border-top:1px solid #1d3557; padding-top:25px; text-align:center; font-size:14px; opacity:0.8;}
+        @media(max-width:768px){
+            .hero h2{font-size:30px;} 
+            .header-flex{justify-content:center; text-align:center;} 
+            .header-info{text-align:center;} 
+            .brand h1{font-size:28px;}
+            .header-info .tel{font-size:24px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-flex">
+                <div class="brand">
+                    <h1>MTMS ENERGIE</h1>
+                    <p>Plomberie • Chauffage • Ventilation</p>
+                </div>
+                <div class="header-info">
+                    <div class="cible">Particuliers • Professionnels • Industriel</div>
+                    <a href="tel:0768687548" class="tel">07 68 68 75 48</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Plomberie • Chauffage • Ventilation</h2>
+            <p>L’expert pour vos projets résidentiels, tertiaires et industriels</p>
+            <a href="tel:0768687548" class="btn">Urgence 7j/7 : Appeler</a>
+            <a href="mailto:mtms.energie75@gmail.com" class="btn btn-blanc">Demander un devis</a>
+        </div>
+    </section>
+
+    <section class="badges">
+        <div class="container">
+            <div class="badges-flex">
+                <span>PARTICULIERS</span>
+                <span>PROFESSIONNELS</span>
+                <span>SITES INDUSTRIELS</span>
+                <span>DÉPANNAGE 7J/7</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nos domaines d’intervention</h2>
+            <p class="intro">De la maison individuelle au site industriel, une équipe réactive et équipée</p>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-tag">Particuliers</span>
+                    <h3>Création salle de bain</h3>
+                    <p>Conception et installation complète clé en main. Rénovation totale ou partielle pour particuliers.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Tous secteurs</span>
+                    <h3>Réparation fuite d'eau</h3>
+                    <p>Détection et réparation urgente. Intervention 7j/7 pour maisons, bureaux, commerces et usines.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Professionnels</span>
+                    <h3>Installation chaufferie</h3>
+                    <p>Pose de chaudières gaz/fioul et pompes à chaleur pour immeubles, commerces et locaux professionnels.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Industriel</span>
+                    <h3>Tuyauterie industrielle</h3>
+                    <p>Création et modification de réseaux acier, inox, multicouche. Interventions sur sites de production et entrepôts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <h2>Nous intervenons pour</h2>
+            <div class="clients-list">
+                <span>Boulangeries</span>
+                <span>Restaurants</span>
+                <span>Bureaux</span>
+                <span>Entrepôts</span>
+                <span>Usines</span>
+                <span>Syndics</span>
+                <span>Commerces</span>
+                <span>Collectivités</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="zones">
+        <div class="container">
+            <h2>Zone d'intervention</h2>
+            <p class="zone-main">ÎLE-DE-FRANCE ET FRANCE MÉTROPOLITAINE</p>
+            <p class="zone-sub">Véhicules équipés • Intervention rapide • Astreinte dépannage</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>MTMS ENERGIE</h4>
+                    <p>Plomberie • Chauffage • Ventilation</p>
+                    <p>SIREN : 953 741 060</p>
+                    <p>Siège : Argenteuil (95)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <p>Salle de bain clé en main</p>
+                    <p>Dépannage fuite 7j/7</p>
+                    <p>Chaufferie collective</p>
+                    <p>Tuyauterie industrielle</p>
+                    <p>Ventilation VMC</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Tél :</strong> <a href="tel:0768687548">07 68 68 75 48</a></p>
+                    <p><strong>Email :</strong> <a href="mailto:mtms.energie75@gmail.com">mtms.energie75@gmail.com</a></p>
+                    <p><strong>Intervention :</strong> IDF + France métro.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MTMS ENERGIE - Artisan Plombier Chauffagiste</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
