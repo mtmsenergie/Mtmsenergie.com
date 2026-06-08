@@ -3,61 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTMS ENERGIE - Plomberie Chauffage Ventilation Pro & Industriel</title>
-    <meta name="description" content="MTMS ENERGIE - Plombier chauffagiste pour particuliers, professionnels et sites industriels. Dépannage, installation chaufferie, tuyauterie industrielle. Argenteuil 07 68 68 75 48">
+    <title>MTMS ENERGIE - Plomberie Chauffage Ventilation</title>
     <style>
         * {margin:0; padding:0; box-sizing:border-box;}
-        body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.6; color:#1a1a1a;}
-        .container {max-width:1200px; margin:0 auto; padding:0 20px;}
-        header {background:#fff; padding:15px 0; box-shadow:0 2px 10px rgba(0,0,0,0.08); position:sticky; top:0; z-index:100;}
-        .header-content {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
-        .logo {max-height:70px; width:auto;}
-        .header-right {text-align:right;}
-        .tagline {font-size:13px; color:#0d4f6c; font-weight:600; margin-bottom:5px; text-transform:uppercase;}
-        .phone {font-size:24px; font-weight:800; color:#e63946; text-decoration:none; display:block;}
-        .hero {background:linear-gradient(135deg,#0d4f6c 0%,#1d3557 100%); color:white; padding:90px 0; text-align:center;}
-        .hero h1 {font-size:44px; margin-bottom:15px; font-weight:900;}
-        .hero .subtitle {font-size:22px; margin-bottom:10px; opacity:0.95;}
-        .hero .subtext {font-size:18px; margin-bottom:35px; opacity:0.85;}
-        .btn-group {display:flex; gap:15px; justify-content:center; flex-wrap:wrap;}
-        .btn {display:inline-block; background:#e63946; color:white; padding:18px 36px; text-decoration:none; border-radius:6px; font-weight:bold; font-size:18px; transition:transform 0.2s;}
-        .btn:hover {transform:translateY(-2px);}
-        .btn-secondary {background:white; color:#0d4f6c;}
-        .badges {background:#f8f9fa; padding:30px 0; border-bottom:1px solid #e9ecef;}
-        .badges-grid {display:flex; justify-content:center; gap:40px; flex-wrap:wrap; text-align:center;}
-        .badge {font-weight:700; color:#0d4f6c; font-size:16px;}
-        .services {padding:80px 0; background:#fff;}
-        .services h2 {text-align:center; font-size:38px; margin-bottom:15px; color:#0d4f6c; font-weight:900;}
-        .services .intro {text-align:center; font-size:18px; color:#555; margin-bottom:50px;}
-        .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px;}
-        .card {background:white; border:2px solid #e9ecef; border-radius:12px; overflow:hidden; transition:all 0.3s;}
-        .card:hover {border-color:#0d4f6c; box-shadow:0 8px 25px rgba(13,79,108,0.15); transform:translateY(-5px);}
-        .card img {width:100%; height:200px; object-fit:cover;}
-        .card-content {padding:25px;}
-        .card-tag {display:inline-block; background:#e8f4f8; color:#0d4f6c; padding:4px 12px; border-radius:4px; font-size:12px; font-weight:700; margin-bottom:12px; text-transform:uppercase;}
-        .card h3 {color:#0d4f6c; margin-bottom:12px; font-size:22px; font-weight:800;}
-        .card p {color:#555; font-size:15px;}
-        .clients {padding:70px 0; background:#f8f9fa; text-align:center;}
-        .clients h2 {font-size:32px; margin-bottom:30px; color:#0d4f6c;}
-        .clients-grid {display:flex; justify-content:center; gap:30px; flex-wrap:wrap; font-weight:600; color:#555;}
-        .zones {padding:70px 0; text-align:center; background:white;}
-        .zones h2 {font-size:36px; margin-bottom:20px; color:#0d4f6c; font-weight:900;}
-        .zones p {font-size:24px; font-weight:800; color:#e63946; text-transform:uppercase; margin-bottom:10px;}
-        .zones .subtext {font-size:16px; color:#555; font-weight:normal; text-transform:none;}
-        footer {background:#0d4f6c; color:white; padding:60px 0 30px;}
-        .footer-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px; margin-bottom:40px;}
-        .footer-col h4 {font-size:18px; margin-bottom:18px; color:#a8dadc; font-weight:700;}
-        .footer-col p, .footer-col li {margin:10px 0; opacity:0.9; font-size:15px; list-style:none;}
-        .footer-col a {color:white; text-decoration:none;}
-        .footer-col a:hover {color:#a8dadc;}
-        .footer-bottom {border-top:1px solid #1d3557; padding-top:30px; text-align:center; font-size:14px; opacity:0.8;}
-        @media(max-width:768px){.hero h1{font-size:32px;} .hero .subtitle{font-size:18px;} .header-content{justify-content:center; text-align:center;} .header-right{text-align:center;} .phone{font-size:22px;}}
+        body {font-family:Arial,sans-serif; line-height:1.6; color:#1a1a1a;}
+        .container {max-width:1100px; margin:0 auto; padding:0 20px;}
+        header {background:#fff; padding:15px 0; border-bottom:3px solid #0d4f6c;}
+        .header-flex {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
+        .logo-svg {height:70px; width:auto;}
+        .header-info {text-align:right;}
+        .header-info .cible {font-size:13px; color:#0d4f6c; font-weight:700; text-transform:uppercase;}
+        .header-info .tel {font-size:26px; font-weight:900; color:#e63946; text-decoration:none;}
+        .hero {background:#0d4f6c; color:white; padding:80px 0; text-align:center;}
+        .hero h1 {font-size:42px; margin-bottom:15px; font-weight:900;}
+        .hero p {font-size:20px; margin-bottom:30px; opacity:0.9;}
+        .btn {display:inline-block; background:#e63946; color:white; padding:16px 32px; text-decoration:none; border-radius:5px; font-weight:bold; font-size:18px; margin:5px;}
+        .btn-blanc {background:white; color:#0d4f6c;}
+        .badges {background:#f1f5f9; padding:25px 0;}
+        .badges-flex {display:flex; justify-content:center; gap:30px; flex-wrap:wrap; font-weight:700; color:#0d4f6c;}
+        .services {padding:70px 0;}
+        .services h2 {text-align:center; font-size:36px; margin-bottom:50px; color:#0d4f6c; font-weight:900;}
+        .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px;}
+        .card {border:2px solid #e2e8f0; border-radius:10px; padding:25px;}
+        .card-tag {display:inline-block; background:#e8f4f8; color:#0d4f6c; padding:3px 10px; border-radius:4px; font-size:11px; font-weight:700; margin-bottom:10px; text-transform:uppercase;}
+        .card h3 {color:#0d4f6c; margin-bottom:10px; font-size:20px; font-weight:800;}
+        .zones {padding:60px 0; background:#f8f9fa; text-align:center;}
+        .zones h2 {font-size:32px; margin-bottom:15px; color:#0d4f6c; font-weight:900;}
+        .zones p {font-size:22px; font-weight:800; color:#e63946; text-transform:uppercase;}
+        footer {background:#0d4f6c; color:white; padding:50px 0 25px;}
+        .footer-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:35px; margin-bottom:35px;}
+        .footer-col h4 {font-size:17px; margin-bottom:15px; color:#a8dadc;}
+        .footer-col p, .footer-col a {margin:8px 0; color:white; text-decoration:none; font-size:15px;}
+        .footer-bottom {border-top:1px solid #1d3557; padding-top:25px; text-align:center; font-size:14px; opacity:0.8;}
+        @media(max-width:768px){.hero h1{font-size:30px;} .header-flex{justify-content:center; text-align:center;} .header-info{text-align:center;}}
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <img src="logo.png" alt="MTMS ENERGIE Logo" class="logo">
-                <div class="header-right">
-                    <div class="tagline">Particuliers • Prof
+            <div class="header-flex">
+                <svg class="logo-svg" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="150" cy="35" r="28" fill="none" stroke="#0d4f6c" stroke-width="3"/>
+                    <text x="150" y="42" font-family="Arial" font-size="24" font-weight="bold" fill="#0d4f6c" text-anchor="middle">ME</text>
+                    <text x="150" y="68" font-family="Arial" font-size="16" font-weight="bold" fill="#0d4f6c" text-anchor="middle">MTMS ENERGIE</text>
+                    <text x="150" y="82" font-family="Arial" font-size="9" fill="#0d4f6c" text-anchor="middle">PLOMBERIE • CHAUFFAGE • VENTILATION</text>
+                    <line x1="90" y1="88" x2="210" y2="88" stroke="#0d4f6c" stroke-width="1"/>
+                    <text x="150" y="98" font-family="Arial" font-size="10" fill="#0d4f6c" text-anchor="middle">07 68 68 75 48</text>
+                </svg>
+                <div class="header-info">
+                    <div class="cible">Particuliers • Professionnels • Industriel</div>
+                    <a href="tel:0768687548" class="tel">07 68 68 75 48</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Plomberie • Chauffage • Ventilation</h1>
+            <p>L’expert pour vos projets résidentiels, tertiaires et industriels</p>
+            <a href="tel:0768687548" class="btn">Urgence 7j/7 : Appeler</a>
+            <a href="mailto:mtms.energie75@gmail.com" class="btn btn-blanc">Demander un devis</a>
+        </div>
+    </section>
+
+    <section class="badges">
+        <div class="container">
+            <div class="badges-flex">
+                <span>PARTICULIERS</span>
+                <span>PROFESSIONNELS</span>
+                <span>SITES INDUSTRIELS</span>
+                <span>DÉPANNAGE 7J/7</span>
+            
