@@ -10,7 +10,7 @@
         .container {max-width:1100px; margin:0 auto; padding:0 20px;}
         header {background:#fff; padding:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
         .header-content {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;}
-        .logo-img {height:70px; width:auto;}
+        .logo-img {height:75px; width:auto;}
         .phone {font-size:22px; font-weight:bold; color:#e63946; text-decoration:none;}
         .hero {background:linear-gradient(135deg,#1d3557 0%,#457b9d 100%); color:white; padding:80px 0; text-align:center;}
         .hero h1 {font-size:40px; margin-bottom:15px;}
@@ -28,11 +28,67 @@
         .zones p {font-size:26px; margin-bottom:10px; font-weight:900; color:#e63946; text-transform:uppercase;}
         footer {background:#1d3557; color:white; padding:45px 0; text-align:center;}
         footer p {margin:8px 0;}
-        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .logo-img{height:60px;} .zones p{font-size:20px;}}
+        @media(max-width:768px){.hero h1{font-size:30px;} .header-content{justify-content:center; text-align:center;} .logo-img{height:65px;} .zones p{font-size:20px;}}
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBgYGBgYGBgYGBgYGBgYGBgYGBgYHSggGBolGxUVITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYHAAj/xABFEAACAQIDBQYDBgMGBwAAAAABAgADEQQSIQUGMUETIlFhcYGRoRQjQrHB0eEjJDNicoKSsvAWM0Njc6LxJTRUY3N0kqLC/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECBAUDBv/EAC4RAQEAAgICAwEAAwAAAAAAAAABAhEDIRIxQVFhcRMi/9oADAMBAAIRAxEAPwD6qKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA
+                <img src="https://i.imgur.com/8Q1Zz7P.png" alt="MTMS ENERGIE Logo" class="logo-img">
+                <a href="tel:0768687548" class="phone">07 68 68 75 48</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Plomberie • Chauffage • Ventilation</h1>
+            <p>Dépannage, installation et entretien - Intervention rapide 7j/7</p>
+            <a href="tel:0768687548" class="btn">Appeler maintenant</a>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2>Nos prestations</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" alt="Création salle de bain">
+                    <div class="card-content">
+                        <h3>Création de salle de bain</h3>
+                        <p>Conception et installation complète de votre salle de bain clé en main. Carrelage, plomberie, sanitaire.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=400&fit=crop" alt="Réparation fuite d'eau">
+                    <div class="card-content">
+                        <h3>Réparation de fuite d'eau</h3>
+                        <p>Détection et réparation de fuites sur tuyauterie, robinet, WC. Intervention d'urgence 7j/7.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" alt="Installation chaudière">
+                    <div class="card-content">
+                        <h3>Installation de chaufferie</h3>
+                        <p>Pose et mise en service de chaudières gaz, fioul et pompes à chaleur. Entretien annuel obligatoire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="zones">
+        <div class="container">
+            <h2>Zone d'intervention</h2>
+            <p>ÎLE-DE-FRANCE ET FRANCE MÉTROPOLITAINE</p>
+            <p style="font-size:18px; color:#333; font-weight:normal; text-transform:none;">Dépannage urgent 7j/7 - Devis gratuit</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p><strong>MTMS ENERGIE</strong></p>
+            <p>PLOMBERIE • CHAUFFAGE • VENTILATION</p>
+            <p>07 68 68 75 48 | Basé à Argenteuil</p>
+            <p style="font-size:14px; margin-top:12px; opacity:0.8;">SIREN : 953 741 060</p>
+        </div>
+    </footer>
+</body>
+</html>
